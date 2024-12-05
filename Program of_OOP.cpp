@@ -1,25 +1,25 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-class Student
+class Addition
 {
-
     public:
-        //variables
-        int id;
-        double gpa;
-        //functions
+    int c;
+
+    void result(int a, int b) //FORMAL PARAMITER
+    {
+        c = a+b;
+        cout<<"The result is: "<<c;
+
+    }
 
 };
 
-int main()
-
+main()
 {
-    Student Mim;
+        Addition ob;
+        int a,b;
+        cin>>a>>b;
 
-    Mim.id = 2175;
-    Mim.gpa = 3.95;
-
-    cout<< Mim.id <<"   "<< Mim.gpa;
-
+        ob.result(a,b); //ACTUAL PARAMITER
 }
